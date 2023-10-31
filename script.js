@@ -18,6 +18,7 @@ let getImages = async (page)=>{
         newElement.innerHTML = `
         <a href="${e.links.html}" class="text" target="_blank"><p class="description">${e.alt_description}</p>
         </a><a href="${e.urls.full}" target="_blank" class="download" download="image"><img src="${e.urls.full}" alt=""><i class="fa-solid fa-download"></i></a>`
+        
 
         container.appendChild(newElement);
     });
